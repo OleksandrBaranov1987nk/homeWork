@@ -70,9 +70,9 @@ const images = [
 const galleryContainer = document.querySelector('.gallery');
 
 const galleryMarkup = images.map(({preview, original, description}) => `
-  <li class="gallery__item"></li>
-    <a class="gallery__link" href="${original}">
-        <img class="gallery__image" src="${preview}" alt="${description}" />
+  <li class="gallery-item"></li>
+    <a class="gallery-link" href="${original}">
+        <img class="gallery-image" src="${preview}" alt="${description}" />
 `).join('');
 
 galleryContainer.innerHTML = galleryMarkup;
