@@ -17,9 +17,11 @@ form.addEventListener('input', (event) => {
 
 const savedData = (localStorage.getItem(STORAGE_KEY));
 if (savedData) {
-    formData.elements.email.value = savedData.email || "";
-    formData.elements.message.value = savedData.message || "";
+    form.elements.email.value = savedData.email;
+    form.elements.message.value = savedData.message;
 } 
+
+console.log(savedData);
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
