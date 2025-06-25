@@ -17,7 +17,7 @@ form.addEventListener('input', (event) => {
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const savedData = localStorage.getItem(STORAGE_KEY);
-    if (savedData) {
+    if (savedData) {}
 });
 
 
